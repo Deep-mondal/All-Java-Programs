@@ -1,0 +1,27 @@
+package SnakeAndLadderGame;
+
+public class SnakeAndLadderGame {
+	static int tableBox[][]=new int[10][10];
+	static void initTable(int a[][]) {
+		int num=101;
+		for(int i=1;i<=10;i++) {
+			if(i%2==0)
+				for(int j=0;j<=10;j++) {
+					System.out.print(--num);
+				}
+			else {
+				for(int j=10;j>=1;j++) {
+					System.out.print(--num);
+				}
+			}
+			System.out.println();
+		}
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		initTable(tableBox);
+
+	}
+
+}
